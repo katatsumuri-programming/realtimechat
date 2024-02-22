@@ -125,6 +125,6 @@ io.on('connection', (socket) => {
 });
 
 // ポート3000番でサーバを起動します。
-server.listen(3000, () => {
-  console.log('listening on *:3000');
+server.listen(80, () => {
+  console.log('listening on *:80');
 });
