@@ -1,0 +1,27 @@
+<head>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="node_modules/socket.io/client-dist/socket.io.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kosugi+Maru&family=Protest+Strike&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="entrance">
+    <button id="createRoom">部屋を作る</button>
+    <div id="rooms"></div>
+  </div>
+  <div class="inRoom">
+    <div class="control">
+    <h2 id="roomName"></h2>
+
+    <button id="exitRoom">EXIT</button>
+    <input type="text" id="name" placeholder="ペンネーム">
+    </div>
+    <div id="users">
+      <textarea id="comfield" placeholder="ここに伝えたい内容を書く"></textarea>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>

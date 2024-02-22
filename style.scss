@@ -1,0 +1,185 @@
+$theme-gradations: (
+
+);
+
+body {
+    margin: 0;
+}
+
+button {
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid aliceblue;
+    /* background-color: royalblue; */
+    color: white;
+    font-weight: bold;
+    font-size:15px;
+    letter-spacing: 0.25em;
+    background-image: linear-gradient(90deg, rgba(221, 255, 224, 1), rgba(140, 255, 153, 1) 1%, rgba(117, 224, 252, 1));
+    font-family: "Kosugi Maru", sans-serif;
+    &:hover {
+        background-image: linear-gradient(60deg, rgba(221, 255, 224, 1), rgba(140, 255, 153, 1) 1%, rgba(117, 224, 252, 1));
+    }
+}
+h2 {
+    display: inline-block;
+    margin: 20px;
+    margin-bottom: 10px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 50px;
+    line-height: 50px;
+}
+input[type="text"] {
+    height: 50px;
+    width: 400px;
+    padding: 10px 15px;
+    border-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
+    border-image-slice: 1;
+    display: block;
+    margin: 20px;
+    outline: none;
+    font-size: 16px;
+    font-family: "Kosugi Maru", sans-serif;
+}
+input[type="checkbox"] {
+    margin-left: 50px;
+}
+
+label {
+    font-family: "Kosugi Maru", sans-serif;
+    line-height: 50px;
+    margin: 20px;
+    height: 50px;
+}
+.control {
+    display: flex;
+}
+
+textarea{
+    margin:1vw;
+    width: 31vw;
+    height: calc(((100vh - 90px) / 3) - 2vw);
+    text-align: center;
+    outline: none;
+    border: none;
+    /* color: #181818; */
+    color: #fff;
+    border-radius: 30px;
+    padding: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    /* background-image: linear-gradient(-45deg, #96fbc4 0%, #f9f586 100%); */
+
+    font-family: "Kosugi Maru", sans-serif;
+    &::placeholder {
+        color: #eee;
+    }
+
+}
+.gradation_ {
+    &0 {
+        background-image: linear-gradient(-45deg, #2af598 0%, #009efd 100%);
+
+        &:hover {
+            background-size: 150% auto;
+        }
+    }
+    &1 {
+        background-image: linear-gradient(-45deg, #96fbc4 0%, #f9f586 100%);
+
+        &:hover {
+            background-size: 150% auto;
+        }
+    }
+    &2 {
+        background-image: linear-gradient(-45deg, #b721ff 0%, #21d4fd 100%);
+
+        &:hover {
+            background-size: 150% auto;
+        }
+    }
+    &3 {
+        background-image: linear-gradient(-45deg, #f77062 0%, #fe5196 100%);
+        &:hover {
+            background-size: 150% auto;
+        }
+    }
+    &4 {
+        background-image: linear-gradient(-45deg, #16a085 0%, #ecd670 100%);
+        &:hover {
+            background-size: 150% auto;
+        }
+    }
+    &5 {
+        background-image: linear-gradient(-45deg, #0acffe 0%, #495aff 100%);
+        &:hover {
+            background-size: 150% auto;
+        }
+    }
+}
+
+#rooms {
+    display: flex;
+}
+.room {
+    font-family: "Kosugi Maru", sans-serif;
+    margin: 20px;
+    padding: 10px;
+    color: #fff;
+    height:50px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+h3 {
+    margin: 0;
+    width: 300px;
+
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+#users {
+    display: flex;
+    flex-wrap: wrap;
+    div {
+        margin:1vw;
+        width:27vw;
+        height: calc(((100vh - 90px) / 3) - 6vw);
+        text-align: center;
+        /* color: #181818; */
+        color: #fff;
+        border-radius: 30px;
+        padding: 2vw;
+        font-size: 20px;
+        font-weight: bold;
+        /* background-image: linear-gradient(-45deg, #96fbc4 0%, #f9f586 100%); */
+
+        font-family: "Kosugi Maru", sans-serif;;
+
+        resize: both;
+        word-break : break-all;
+    }
+}
+
+.text {
+    margin: 0;
+    height: calc(100% - 28px);
+    width: 100%;
+    font-size: 24px;
+    overflow: auto;
+}
+.name {
+    margin: 0;
+    height: 18px;
+    line-height: 18px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#textdir:checked ~ .userbox{
+    text-align: start;
+}
